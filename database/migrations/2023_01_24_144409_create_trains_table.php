@@ -17,6 +17,15 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
+            $table->string('stazione_di_partenza');
+            $table->string('stazione_di_arrivo');
+            $table->dateTime('orario_di_partenza');
+            $table->dateTime('orario_di_arrivo');
+            $table->string('codice_treno');
+            $table->string('numero_carrozze');
+            $table->boolean('in_orario')->default(true);
+            $table->boolean('in_ritardo')->default(false);
+
         });
     }
 
