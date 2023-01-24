@@ -18,7 +18,7 @@
             @foreach ($trains as $train)
                 <div class="col-3 p-5">
                     <div class="card">
-
+                        <h3 class="text-success pt-3 text-center">Azienda:<br> {{$train->name}}</h3>
                     </div>
                 </div>
             @endforeach
